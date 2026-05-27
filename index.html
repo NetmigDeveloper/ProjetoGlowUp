@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netmig Telecom - Internet fibra óptica de alta velocidade. Planos de 600 Mega, 800 Mega e 1 Giga com Watch TV incluso. Contrate já!">
+    <title>Netmig Telecom | Internet Fibra Óptica</title>
+
+    <link rel="icon" type="image/png" href="imgs/logo_symbol.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo" aria-label="Netmig - Página inicial">
+                <img src="imgs/logo_symbol_txt.png" alt="Netmig Telecom" class="header__logo-img" width="160" height="44">
+            </a>
+
+            <nav class="header__nav" id="headerNav">
+                <ul class="header__menu">
+                    <li><a href="#planos" class="header__link">Planos</a></li>
+                    <li><a href="#watch-tv" class="header__link">Watch TV</a></li>
+                    <li><a href="#servicos" class="header__link">Serviços</a></li>
+                    <li><a href="#chip-movel" class="header__link">Chip Móvel</a></li>
+                </ul>
+
+                <a href="#planos" class="btn btn--primary header__cta">Assine Já</a>
+            </nav>
+
+            <button class="header__hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__bg-shapes" aria-hidden="true">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+                <div class="hero__shape hero__shape--3"></div>
+                <div class="hero__shape hero__shape--4"></div>
+                <div class="hero__shape hero__shape--5"></div>
+            </div>
+
+            <div class="hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge">Fibra Óptica de Verdade</span>
+
+                    <h1 class="hero__title">
+                        Internet que <span class="text-gradient">transforma</span> sua conexão com o mundo
+                    </h1>
+
+                    <p class="hero__subtitle">
+                        Velocidade, estabilidade e entretenimento em um só lugar. Navegue, assista, jogue e trabalhe sem limites com a Netmig.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#planos" class="btn btn--primary btn--lg">Ver Planos Disponíveis</a>
+
+                        <a href="https://api.whatsapp.com/send?phone=553123320000&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20da%20Netmig." class="btn btn--outline btn--lg" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Falar no WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="hero__trust">
+                        <div class="hero__trust-item">
+                            <i class="fa-solid fa-headset"></i>
+                            Suporte 24h
+                        </div>
+
+                        <div class="hero__trust-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            Instalação Rápida
+                        </div>
+
+                        <div class="hero__trust-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Conexão Estável
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__lottie-wrapper">
+                        <img src="imgs/lotties/lottie_conection1.gif" alt="" class="hero__lottie" width="420" height="420" aria-hidden="true">
+                    </div>
+
+                    <div class="hero__floating-card hero__floating-card--1">
+                        <i class="fa-solid fa-wifi"></i>
+                        <span>Fibra 100%</span>
+                    </div>
+
+                    <div class="hero__floating-card hero__floating-card--2">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>+3 mil clientes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__scroll-indicator" aria-hidden="true">
+                <span>Role para descobrir</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section class="planos" id="planos">
+            <div class="planos__container">
+                <div class="section-header">
+                    <span class="section-header__tag">Nossos Planos</span>
+
+                    <h2 class="section-header__title">Escolha o plano ideal para você</h2>
+
+                    <p class="section-header__subtitle">
+                        Todos com <strong>Watch TV incluso</strong>, instalação grátis e suporte especializado. Fidelidade de 12 meses.
+                    </p>
+                </div>
+
+                <div class="planos__grid">
+                    <article class="plano-card plano-card--left" data-reveal>
+                        <div class="plano-card__inner">
+                            <div class="plano-card__speed">
+                                <span class="plano-card__mega">600</span>
+                                <span class="plano-card__unit">MEGA</span>
+                            </div>
+
+                            <h3 class="plano-card__name">Plano Essencial</h3>
+
+                            <div class="plano-card__pricing">
+                                <span class="plano-card__old-price">De R$119,90</span>
+
+                                <div class="plano-card__price-wrapper">
+                                    <span class="plano-card__currency">R$</span>
+                                    <span class="plano-card__price">109</span>
+                                    <span class="plano-card__cents">,90</span>
+                                    <span class="plano-card__period">/mês</span>
+                                </div>
+
+                                <span class="plano-card__condition">Pagando até o vencimento</span>
+                            </div>
+
+                            <div class="plano-card__streaming">
+                                <img src="imgs/logo_watch.png" alt="Watch TV" class="plano-card__watch-icon" width="120" height="53">
+
+                                <div class="plano-card__streaming-text">
+                                    <span>Watch TV <strong>Essencial</strong> incluso</span>
+                                    <small>+10 mil filmes e séries · 1 tela</small>
+                                </div>
+                            </div>
+
+                            <ul class="plano-card__benefits">
+                                <li><i class="fa-solid fa-circle-check"></i> App Qualifica (Cursos)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> App Skello (Livros)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Internet estável e veloz</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Suporte técnico especializado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Instalação fácil e rápida</li>
+                            </ul>
+
+                            <button class="btn btn--secondary btn--full plano-card__btn" data-whatsapp="plano-600">
+                                Contratar Plano 600 Mega
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="plano-card plano-card--featured" data-reveal>
+                        <div class="plano-card__selo">Mais Vantajoso</div>
+
+                        <div class="plano-card__inner">
+                            <div class="plano-card__speed">
+                                <span class="plano-card__mega">1</span>
+                                <span class="plano-card__unit">GIGA</span>
+                            </div>
+
+                            <h3 class="plano-card__name">Plano Premium</h3>
+
+                            <div class="plano-card__pricing">
+                                <span class="plano-card__old-price">De R$159,90</span>
+
+                                <div class="plano-card__price-wrapper">
+                                    <span class="plano-card__currency">R$</span>
+                                    <span class="plano-card__price">149</span>
+                                    <span class="plano-card__cents">,90</span>
+                                    <span class="plano-card__period">/mês</span>
+                                </div>
+
+                                <span class="plano-card__condition">Pagando até o vencimento</span>
+                            </div>
+
+                            <div class="plano-card__streaming plano-card__streaming--premium">
+                                <img src="imgs/logo_watch.png" alt="Watch TV" class="plano-card__watch-icon" width="120" height="53">
+
+                                <div class="plano-card__streaming-text">
+                                    <span>Watch TV <strong>Premium</strong> incluso</span>
+                                    <small>+20 mil filmes e séries · Canais ao vivo · Lançamentos · 4 telas</small>
+                                </div>
+                            </div>
+
+                            <ul class="plano-card__benefits">
+                                <li><i class="fa-solid fa-circle-check"></i> Skello (Livros)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Qualifica (Cursos)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Bittrainers (Fitness)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Internet estável e veloz</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Suporte técnico especializado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Instalação fácil e rápida</li>
+                            </ul>
+
+                            <button class="btn btn--primary btn--full plano-card__btn plano-card__btn--glow" data-whatsapp="plano-1000">
+                                Contratar Plano 1 Giga
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="plano-card plano-card--right" data-reveal>
+                        <div class="plano-card__inner">
+                            <div class="plano-card__speed">
+                                <span class="plano-card__mega">800</span>
+                                <span class="plano-card__unit">MEGA</span>
+                            </div>
+
+                            <h3 class="plano-card__name">Plano Avançado</h3>
+
+                            <div class="plano-card__pricing">
+                                <span class="plano-card__old-price">De R$129,90</span>
+
+                                <div class="plano-card__price-wrapper">
+                                    <span class="plano-card__currency">R$</span>
+                                    <span class="plano-card__price">119</span>
+                                    <span class="plano-card__cents">,90</span>
+                                    <span class="plano-card__period">/mês</span>
+                                </div>
+
+                                <span class="plano-card__condition">Pagando até o vencimento</span>
+                            </div>
+
+                            <div class="plano-card__streaming">
+                                <img src="imgs/logo_watch.png" alt="Watch TV" class="plano-card__watch-icon" width="120" height="53">
+
+                                <div class="plano-card__streaming-text">
+                                    <span>Watch TV <strong>Plus</strong> incluso</span>
+                                    <small>+15 mil filmes e séries · Canais ao vivo · 2 telas</small>
+                                </div>
+                            </div>
+
+                            <ul class="plano-card__benefits">
+                                <li><i class="fa-solid fa-circle-check"></i> Clube Certo (Descontos)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Bittrainers (Fitness)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Skello (Livros)</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Internet estável e veloz</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Suporte técnico especializado</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Instalação fácil e rápida</li>
+                            </ul>
+
+                            <button class="btn btn--secondary btn--full plano-card__btn" data-whatsapp="plano-800">
+                                Contratar Plano 800 Mega
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="planos__fidelidade">
+                    <i class="fa-solid fa-info-circle"></i>
+                    Todos os planos possuem fidelidade de 12 meses. Consulte disponibilidade em sua região.
+                </p>
+            </div>
+        </section>
+
+        <section class="watchtv" id="watch-tv">
+            <div class="watchtv__container">
+                <div class="section-header">
+                    <span class="section-header__tag">Entretenimento Incluso</span>
+
+                    <h2 class="section-header__title">Watch TV: streaming em todos os planos</h2>
+
+                    <p class="section-header__subtitle">
+                        Filmes, séries e canais ao vivo com qualidade de imagem excepcional. O conteúdo varia conforme o plano escolhido.
+                    </p>
+                </div>
+
+                <div class="watchtv__grid" data-reveal>
+                    <div class="watchtv__card">
+                        <div class="watchtv__card-icon">
+                            <img src="imgs/logo_watch.png" alt="Watch TV" width="160" height="71">
+                        </div>
+
+                        <h4>Watch TV Essencial</h4>
+
+                        <span class="watchtv__plano-tag">Plano 600 Mega</span>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> +10.000 filmes e séries</li>
+                            <li><i class="fa-solid fa-check"></i> Qualidade HD</li>
+                            <li><i class="fa-solid fa-check"></i> 1 tela simultânea</li>
+                        </ul>
+                    </div>
+
+                    <div class="watchtv__card watchtv__card--highlight">
+                        <div class="watchtv__card-icon">
+                            <img src="imgs/logo_watch.png" alt="Watch TV" width="160" height="71">
+                        </div>
+
+                        <h4>Watch TV Premium</h4>
+
+                        <span class="watchtv__plano-tag watchtv__plano-tag--premium">Plano 1 Giga</span>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> +20.000 filmes e séries</li>
+                            <li><i class="fa-solid fa-check"></i> Canais ao vivo exclusivos</li>
+                            <li><i class="fa-solid fa-check"></i> Lançamentos semanais</li>
+                            <li><i class="fa-solid fa-check"></i> Qualidade 4K</li>
+                            <li><i class="fa-solid fa-check"></i> 4 telas simultâneas</li>
+                        </ul>
+                    </div>
+
+                    <div class="watchtv__card">
+                        <div class="watchtv__card-icon">
+                            <img src="imgs/logo_watch.png" alt="Watch TV" width="160" height="71">
+                        </div>
+
+                        <h4>Watch TV Plus</h4>
+
+                        <span class="watchtv__plano-tag">Plano 800 Mega</span>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> +15.000 filmes e séries</li>
+                            <li><i class="fa-solid fa-check"></i> Canais ao vivo</li>
+                            <li><i class="fa-solid fa-check"></i> Qualidade Full HD</li>
+                            <li><i class="fa-solid fa-check"></i> 2 telas simultâneas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits" id="beneficios">
+            <div class="benefits__container">
+                <div class="benefits__visual" data-reveal>
+                    <img src="imgs/lotties/lottie_conection2.gif" alt="" class="benefits__lottie" width="380" height="380" aria-hidden="true" loading="lazy">
+                </div>
+
+                <div class="benefits__content" data-reveal>
+                    <span class="section-header__tag">Por que Netmig?</span>
+
+                    <h2 class="section-header__title benefits__title">Muito mais que internet</h2>
+
+                    <div class="benefits__grid">
+                        <div class="benefit-item">
+                            <div class="benefit-item__icon">
+                                <i class="fi fi-rr-speedometer-arrow"></i>
+                            </div>
+
+                            <div class="benefit-item__text">
+                                <h4>Ultra Velocidade</h4>
+                                <p>Downloads rápidos e navegação fluida com fibra óptica de ponta.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-item__icon">
+                                <i class="fi fi-rr-wifi"></i>
+                            </div>
+
+                            <div class="benefit-item__text">
+                                <h4>Wi-Fi Poderoso</h4>
+                                <p>Alcance máximo e estabilidade em todos os ambientes da sua casa.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-item__icon">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+
+                            <div class="benefit-item__text">
+                                <h4>Jogos Online</h4>
+                                <p>Ping baixo e conexão estável para dominar suas partidas.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-item__icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+
+                            <div class="benefit-item__text">
+                                <h4>Suporte 24h</h4>
+                                <p>Equipe pronta para garantir sua conexão a qualquer momento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <div class="servicos__container">
+                <div class="section-header">
+                    <span class="section-header__tag">Serviços Adicionais</span>
+
+                    <h2 class="section-header__title">Complemente sua experiência</h2>
+
+                    <p class="section-header__subtitle">
+                        Soluções extras para sua casa ou empresa.
+                    </p>
+                </div>
+
+                <div class="servicos__grid" data-reveal>
+                    <div class="servico-card">
+                        <div class="servico-card__icon">
+                            <i class="fi fi-rs-camera-security"></i>
+                        </div>
+
+                        <h4>Locação de Câmeras</h4>
+
+                        <p>Segurança e monitoramento para sua residência ou negócio.</p>
+
+                        <button class="btn btn--outline btn--sm servico-card__btn" data-whatsapp="servico-cameras">
+                            Solicitar Orçamento
+                        </button>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-card__icon">
+                            <i class="fi fi-rr-router-wifi"></i>
+                        </div>
+
+                        <h4>Ponto Adicional</h4>
+
+                        <p>Expanda sua rede Wi-Fi para mais ambientes com qualidade.</p>
+
+                        <button class="btn btn--outline btn--sm servico-card__btn" data-whatsapp="servico-ponto">
+                            Solicitar Orçamento
+                        </button>
+                    </div>
+
+                    <div class="servico-card">
+                        <div class="servico-card__icon">
+                            <i class="fi fi-rr-phone-call"></i>
+                        </div>
+
+                        <h4>Telefone Fixo</h4>
+
+                        <p>Linha fixa com qualidade digital para suas ligações.</p>
+
+                        <button class="btn btn--outline btn--sm servico-card__btn" data-whatsapp="servico-telefone">
+                            Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chip" id="chip-movel">
+            <div class="chip__bg-shapes" aria-hidden="true">
+                <div class="chip__shape chip__shape--1"></div>
+                <div class="chip__shape chip__shape--2"></div>
+            </div>
+
+            <div class="chip__container">
+                <div class="chip__content" data-reveal>
+                    <span class="section-header__tag chip__tag">Chip Netmig</span>
+
+                    <h2 class="chip__title">Planos móveis com a qualidade Netmig Telecom</h2>
+
+                    <p class="chip__subtitle">
+                        Traga seu número com <strong>portabilidade grátis</strong> e aproveite ofertas especiais em planos móveis. Mais economia e praticidade em um só lugar.
+                    </p>
+
+                    <div class="chip__highlights">
+                        <span><i class="fa-solid fa-check-circle"></i> Portabilidade gratuita</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Cobertura nacional</span>
+                        <span><i class="fa-solid fa-check-circle"></i> Combine com seu plano de internet</span>
+                    </div>
+
+                    <button class="btn btn--primary btn--lg" data-whatsapp="chip-movel">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Quero saber mais
+                    </button>
+                </div>
+
+                <div class="chip__visual" data-reveal>
+                    <dotlottie-player
+                        class="chip__lottie"
+                        src="https://lottie.host/fbc0dbb7-3003-4171-830e-b795bc1746a9/3KW8R06Sns.lottie"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                        aria-hidden="true">
+                    </dotlottie-player>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-final">
+            <div class="cta-final__container">
+                <h2>Pronto para uma internet de verdade?</h2>
+
+                <p>Escolha seu plano e comece a navegar com ultra velocidade hoje mesmo.</p>
+
+                <a href="#planos" class="btn btn--primary btn--lg">Ver Planos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <img src="imgs/logo_symbol.png" alt="Netmig" width="48" height="48" class="footer__logo-symbol">
+
+                <p>Netmig Telecom &copy; <span id="currentYear"></span>. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="footer__info">
+                <p>Fidelidade de 12 meses em todos os planos de internet.</p>
+                <p>Consulte disponibilidade e cobertura em sua região.</p>
+            </div>
+
+            <div class="footer__contact">
+                <a href="https://api.whatsapp.com/send?phone=553123320000&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Netmig." target="_blank" rel="noopener noreferrer" class="footer__whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    (31) 2332-0000
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
+    <script src="index.js"></script>
+</body>
+</html>
