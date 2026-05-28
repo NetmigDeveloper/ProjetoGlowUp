@@ -89,16 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getWhatsappMessage(type) {
-        const defaultText = 'Olá! Gostaria de saber mais sobre os planos da Netmig.';
+        const defaultText = 'Olá! 😊 Vi o site da Netmig e gostaria de saber mais sobre os planos disponíveis. Pode me ajudar?';
 
         const messages = {
-            'plano-600': 'Olá! Gostaria de contratar o Plano 600 Mega da Netmig. Poderia me passar mais informações?',
-            'plano-800': 'Olá! Tenho interesse no Plano 800 Mega da Netmig. Gostaria de contratar.',
-            'plano-1000': 'Olá! Quero contratar o Plano 1 Giga da Netmig. Poderia me ajudar?',
-            'servico-cameras': 'Olá! Gostaria de um orçamento para locação de câmeras da Netmig.',
-            'servico-ponto': 'Olá! Quero adicionar um ponto adicional de internet. Pode me ajudar?',
-            'servico-telefone': 'Olá! Tenho interesse no serviço de telefone fixo da Netmig.',
-            'chip-movel': 'Olá! Quero saber mais sobre os planos móveis e portabilidade da Netmig.'
+            'geral': 'Olá! 😊 Vi o site da Netmig e queria tirar algumas dúvidas sobre os planos. Pode me ajudar?',
+            'cobertura': 'Olá! 😊 Gostaria de consultar se a Netmig atende meu endereço. Pode verificar a cobertura pra mim?',
+            'plano-600': 'Olá! 😊 Tenho interesse no Plano 600 Mega da Netmig. Pode verificar se ele está disponível no meu endereço?',
+            'plano-800': 'Olá! 😊 Gostei do Plano 800 Mega da Netmig e queria saber mais detalhes para contratar.',
+            'plano-1000': 'Olá! 🚀 Tenho interesse no Plano 1 Giga da Netmig. Pode me ajudar com a contratação?',
+            'servico-cameras': 'Olá! 😊 Gostaria de saber mais sobre a locação de câmeras da Netmig. Pode me passar um orçamento?',
+            'servico-ponto': 'Olá! 😊 Preciso de um ponto adicional de internet. Pode me orientar sobre valores e disponibilidade?',
+            'servico-telefone': 'Olá! 😊 Tenho interesse no serviço de telefone fixo da Netmig. Pode me passar mais informações?',
+            'chip-movel': 'Olá! 😊 Quero saber mais sobre os planos móveis da Netmig e a portabilidade grátis.'
         };
 
         return messages[type] || defaultText;
