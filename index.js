@@ -45,6 +45,54 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+
+    const proposalModal = document.getElementById('proposalModal');
+    const proposalModalClose = document.getElementById('proposalModalClose');
+    const proposalModalGo = document.getElementById('proposalModalGo');
+    const proposalUrl = 'https://netmigdeveloper.github.io/propostanetmig/';
+    let proposalLastFocus = null;
+
+    function openProposalModal() {
+        if (!proposalModal) return;
+
+        proposalLastFocus = document.activeElement;
+        proposalModal.classList.add('active');
+        document.body.classList.add('modal-open');
+
+        window.setTimeout(() => {
+            if (proposalModalClose) proposalModalClose.focus();
+        }, 80);
+    }
+
+    function closeProposalModal() {
+        if (!proposalModal) return;
+
+        proposalModal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+
+        if (proposalLastFocus && typeof proposalLastFocus.focus === 'function') {
+            proposalLastFocus.focus();
+        }
+    }
+
+    if (proposalModal && proposalModalClose && proposalModalGo) {
+        window.setTimeout(openProposalModal, 900);
+
+        proposalModalClose.addEventListener('click', closeProposalModal);
+
+        proposalModalGo.addEventListener('click', () => {
+            window.open(proposalUrl, '_blank', 'noopener,noreferrer');
+            closeProposalModal();
+        });
+
+        proposalModal.addEventListener('keydown', event => {
+            if (event.key === 'Escape') {
+                closeProposalModal();
+            }
+        });
+    }
+
     const header = document.getElementById('header');
 
     function updateHeaderOnScroll() {
