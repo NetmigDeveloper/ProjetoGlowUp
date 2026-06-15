@@ -50,6 +50,41 @@
 
     <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
 
+    <div class="proposal-modal" id="proposalModal" role="dialog" aria-modal="true" aria-labelledby="proposalModalTitle" aria-describedby="proposalModalText">
+        <div class="proposal-modal__backdrop" aria-hidden="true"></div>
+
+        <div class="proposal-modal__dialog" role="document">
+            <button class="proposal-modal__close" id="proposalModalClose" type="button" aria-label="Fechar janela">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+
+            <div class="proposal-modal__shine" aria-hidden="true"></div>
+
+            <span class="proposal-modal__tag">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                Opção recomendada
+            </span>
+
+            <div class="proposal-modal__icon" aria-hidden="true">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+
+            <h2 id="proposalModalTitle">Deseja conhecer a melhor opção para a Netmig?</h2>
+
+            <p id="proposalModalText">
+                Preparamos uma proposta mais estratégica, com mais liberdade para atualizar planos, campanhas e conteúdos sem depender de alterações diretas no código.
+            </p>
+
+            <div class="proposal-modal__actions">
+                <button class="btn btn--primary btn--lg proposal-modal__go" id="proposalModalGo" type="button">
+                    Vamos lá
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
     <main>
         <section class="hero" id="hero">
             <div class="hero__bg-shapes" aria-hidden="true">
